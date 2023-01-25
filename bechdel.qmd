@@ -48,7 +48,7 @@ Let's take a look at how median budget and gross vary by whether the movie passe
 
 bechdel90_13 %>%
   group_by(binary) %>%
-  summarise(
+  summarize(
     med_budget = median(budget_2013),
     med_domgross = median(domgross_2013, na.rm = TRUE),
     med_intgross = median(intgross_2013, na.rm = TRUE)
@@ -68,7 +68,7 @@ Next, let's take a look at how median budget and gross vary by a more detailed i
 
 bechdel90_13 %>%
   #group_by(___) %>%
-  summarise(
+  summarize(
     med_budget = median(budget_2013),
     med_domgross = median(domgross_2013, na.rm = TRUE),
     med_intgross = median(intgross_2013, na.rm = TRUE)
